@@ -1,0 +1,29 @@
+<suite name = "Orangehrm TestCases">
+	
+	<test name = "AdminWithValidInputs">
+		<parameter name = "uid" value ="Admin"></parameter>
+		<parameter name = "pwd" value ="Qedge123!@#"></parameter>
+		<classes>
+			<class name = "OrangehrmTestcases.AdminLoginWithValidInputs"></class>
+		</classes>
+	</test>
+	
+	<test name = "AdminWithInValidInputs">
+		<parameter name = "uid" value ="xyz"></parameter>
+		<parameter name = "pwd" value ="abc"></parameter>
+		<classes>
+			<class name = "OrangehrmTestcases.AdminLoginWithInvalidInputs"></class>
+		</classes>
+	</test>
+	
+	<test name = "Employee reg">
+		<parameter name = "fname" value ="ram"></parameter>
+		<parameter name = "lname" value ="a"></parameter>
+		<classes>
+			<class name = "OrangehrmTestcases.AdminLoginWithInvalidInputs"></class>
+		</classes>
+	</test>
+	
+	
+	
+</suite>
