@@ -29,10 +29,16 @@ public class Loginpage extends AppUtills
 		}	
 	}
 	
-	public void logout()
+	public boolean logout()
 	{
 		driver.findElement(By.partialLinkText("Welcome")).click();
 		driver.findElement(By.linkText("Logout")).click();
+		if(driver.findElement(By.id("btnLogin")).isDisplayed()){
+			return true;
+		}else {
+			return false;
+		}
+		
 	}
 	
 	public boolean isErrMsgDisplayed()
